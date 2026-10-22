@@ -1,118 +1,322 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projets et Etudes-MIASSOUEKAMA-SAMBA Christ Oberan</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  </head>
-  <body>
-    <style>
-      a {
-        color: color: #000080;
-      }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christ Oberan Miassouekama-Samba — Économétrie de l’énergie</title>
+  <meta name="description" content="Portfolio de Christ Oberan Miassouekama-Samba, étudiant en M2 Économie de l’Énergie à l’IFP School : économétrie appliquée, énergie, environnement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --salt: #F3F6F5;
+      --paper: #FFFFFF;
+      --brine: #0F5C63;
+      --brine-deep: #0A3F45;
+      --ink: #0F1D24;
+      --muted: #55656C;
+      --line: #D3DDDB;
+      --sun: #E2A31B;
+      --serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+    body {
+      margin: 0; background: var(--salt); color: var(--ink);
+      font-family: var(--sans); font-size: 1.0625rem; line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--brine); text-underline-offset: 3px; }
+    a:hover { color: var(--brine-deep); }
+    :focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; border-radius: 4px; }
+    .wrap { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+    h1, h2, h3 { font-family: var(--serif); line-height: 1.15; margin: 0; font-weight: 600; letter-spacing: -0.01em; }
 
-    <header class="bg-danger bg-gradient text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 text-left text-md-center mb-3">
-            <img class="rounded-circle img-fluid" <img src="https://raw.githubusercontent.com/ChristOberan/ChristOberan.github.io/main/Moi.jpg" alt="Ma photo" class="rounded-circle img-fluid" />
- 
-          </div>
-          <div class="col-md-9">
-            <h1>Mes Projets et Etudes</h1>
-            <h5>Étudiant en Master Économie de l’Énergie, de l’Environnement et des Transports à Paris-Saclay, passionné d’économétrie et d’analyse des enjeux énergétiques.</h5>
-            <p class="border-top pt-3">Je m’intéresse à l’intersection entre économétrie, énergie et environnement.<br> 
-              Actuellement étudiant en Master à Paris-Saclay, je développe des compétences en analyse de données appliquées aux grands défis énergétiques.</p>
-          </div>
-        </div>
-      </div>
-    </header>
+    /* Navigation */
+    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(243,246,245,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+    .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 60px; }
+    .brand { font-family: var(--serif); font-weight: 700; text-decoration: none; color: var(--ink); white-space: nowrap; }
+    .topbar nav { display: flex; gap: 1.4rem; overflow-x: auto; scrollbar-width: none; }
+    .topbar nav::-webkit-scrollbar { display: none; }
+    .topbar nav a { color: var(--muted); text-decoration: none; font-size: .95rem; font-weight: 500; white-space: nowrap; padding: .25rem 0; }
+    .topbar nav a:hover { color: var(--brine); }
 
-    <nav class="bg-dark text-white-50 mb-5">
-      <div class="container">
-        <div class="row p-3">
-          <div class="col-md pb-2 pb-md-0">
-            <svg width="1em" height="1.5em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v.883l-7-4.2-7 4.2V11.5l7-4.2 7 4.2V5.383z"/>
-            </svg>
-            <a class="text-white ml-2">christoberan.miassouekama-samba@etu.univ-tours.fr</a>
-            <a class="text-white ml-2">christ.miassouekama-samba@agroparistech.fr</a>  
-          </div>
-          <div class="col-md text-md-right">
-            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-mortarboard-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
-              <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
-            </svg>
-            <a href="https://www.univ-tours.fr" class="text-white ml-2">www.univ-tours.fr</a>
-             <a href="https://www.universite-paris-saclay.fr" class="text-white ml-2">www.université-paris-Saclay.fr</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    /* Hero */
+    .hero { padding: clamp(2.5rem, 7vw, 6rem) 0 clamp(3rem, 7vw, 5.5rem); }
+    .hero .wrap { display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+    .hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.2rem); font-weight: 700; }
+    .hero .lead { font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--brine-deep); margin: 1.4rem 0 0; max-width: 34ch; font-family: var(--serif); font-weight: 400; }
+    .hero p.sub { color: var(--muted); max-width: 52ch; margin: 1.2rem 0 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+    .btn { display: inline-block; padding: .8rem 1.4rem; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: .98rem; border: 2px solid var(--brine); transition: background .2s, color .2s; }
+    .btn.primary { background: var(--brine); color: #fff; }
+    .btn.primary:hover { background: var(--brine-deep); border-color: var(--brine-deep); color: #fff; }
+    .btn.ghost { color: var(--brine); }
+    .btn.ghost:hover { background: var(--brine); color: #fff; }
+    .portrait { position: relative; justify-self: center; width: min(100%, 360px); }
+    .portrait::before { content: ""; position: absolute; inset: 0; transform: translate(16px, 16px); border: 2px solid var(--brine); border-radius: 50%; }
+    .portrait::after { content: ""; position: absolute; width: 22px; height: 22px; border-radius: 50%; background: var(--sun); right: 6%; bottom: 3%; }
+    .portrait img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 50%; background: var(--line); }
 
-    <main class="container">
-      <div class="row">
-        <div class="col-md mb-5">
-          <!-- work experience -->
-          <h2 class="mb-5">Mes projets</h2>
-          <ul>
-            <li>
-              <h6 class="text-danger">Dossier à Rendre</h6>
-              <p>Ça se trouve par ici <a href="https://christoberan.github.io/dossierrendreeee.html">Mon étude!</a></p>
-              <p> voir ici <a href="https://christoberan.github.io/Dossier-R-christ-jules-2nd-sem-version-finale (1).html">Mon projet!</a></p>
-            </li>
-            <li>
-              <h6 class="text-danger">Noms et Prenoms des participants</h6>
-              <p>Voici la liste des noms et prénoms de ceux qui ont participé : Jules ASSOUN, Christ Oberan MIASSOUEKAMA-SAMBA, Shnide JOSEPH W.</p>
-              <p> voici la liste des noms et prénoms pour le deuxième projet: Jules ASSOUN, Christ Oberan MIASSOUEKAMA-SAMBA</p>
-            </li>
-            <li>
-              <h6 class="text-danger"> Mon étude</h6>
-              <p> le Mémoire que je tiens à vous présenter s'intitule: EFFET DU CAPITAL HUMAIN SUR LA CONSOMMATION D'ELECTRICITE EN REPUBLIQUE DU CONGO </p>
-              <h6 class="text-danger"> Resultats</h6>
-              <p> les Résultats de cette étude ont montré que l'éducation a un effet positif sur la consommation d'électricité à court terme en  République du Congo et à long terme l'éducation n'est pas significative, 
-                ce qui signifie qu'elle n'explique pas la consommation  d'électricité en République du Congo à long terme. </p>
-              <p> ça se trouve par ici  <a href="Mon%20M%C3%A9moire%20.pdf" target="_blank">Mon Mémoire!</a></p>
-           </li>
-            <li>
-              <h6 class="text-danger">Logiciel utilisé</h6>
-              <p>Pour réaliser ce projet nous avons utilisé le logiciel R, en rendant un Rmd sous format Html.</p>
-              <p> Les estimations du Mémoire on été fait à l'aide du logiciel Eviews 9</p>
-            </li>
-          </ul>
+    /* Sections */
+    section.block { padding: clamp(3rem, 6vw, 5rem) 0; border-top: 1px solid var(--line); }
+    .head { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; margin-bottom: 2.5rem; align-items: baseline; }
+    .head h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+    .head p { margin: 0; color: var(--muted); max-width: 60ch; }
+
+    /* Timeline (sequence réelle : parcours) */
+    .timeline { list-style: none; margin: 0; padding: 0 0 0 1.6rem; border-left: 2px solid var(--line); display: grid; gap: 2rem; }
+    .timeline li { position: relative; }
+    .timeline li::before { content: ""; position: absolute; left: calc(-1.6rem - 7px); top: .5rem; width: 12px; height: 12px; border-radius: 50%; background: var(--salt); border: 2px solid var(--brine); }
+    .timeline li.now::before { background: var(--sun); border-color: var(--sun); }
+    .timeline time { display: block; font-size: .9rem; color: var(--muted); margin-bottom: .15rem; }
+    .timeline h3 { font-size: 1.3rem; }
+    .timeline p { margin: .35rem 0 0; color: var(--muted); max-width: 64ch; }
+
+    /* Recherche */
+    .research { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: start; }
+    .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: clamp(1.4rem, 3vw, 2.2rem); }
+    .panel.lead-panel { background: var(--brine-deep); color: #EAF3F2; border-color: var(--brine-deep); }
+    .panel.lead-panel h3 { color: #fff; font-size: 1.7rem; }
+    .panel.lead-panel p { color: #C9DCDA; }
+    .panel h3 { font-size: 1.35rem; margin-bottom: .8rem; }
+    .panel p { margin: .7rem 0 0; color: var(--muted); }
+    .finding { margin: 1.4rem 0 0; padding: 1rem 1.2rem; border-left: 4px solid var(--sun); background: rgba(255,255,255,.07); border-radius: 0 8px 8px 0; color: #fff; }
+    .finding strong { font-family: var(--serif); font-size: 1.25rem; }
+    .meta { font-size: .92rem; margin-top: 1.1rem !important; }
+    .panel.lead-panel a { color: #fff; }
+
+    /* Projets */
+    .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .projects .panel { display: flex; flex-direction: column; }
+    .projects .panel .go { margin-top: auto; padding-top: 1.2rem; font-weight: 600; }
+
+    /* Compétences */
+    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .skills h3 { font-size: 1.15rem; padding-bottom: .6rem; border-bottom: 2px solid var(--brine); margin-bottom: .9rem; }
+    .skills ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+    .skills li { color: var(--ink); }
+    .skills li span { color: var(--muted); font-size: .92rem; }
+
+    /* Vision */
+    .vision { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .quote { font-family: var(--serif); font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.3; color: var(--brine-deep); margin: 0; max-width: 28ch; }
+
+    /* Contact */
+    footer { background: var(--ink); color: #D7E0DF; padding: clamp(3rem, 6vw, 4.5rem) 0 2rem; }
+    footer h2 { color: #fff; font-size: clamp(1.8rem, 3.2vw, 2.4rem); }
+    footer .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+    footer a { color: #fff; }
+    footer a:hover { color: var(--sun); }
+    footer .contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+    footer .legal { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #2B3B43; font-size: .88rem; color: #93A4A8; }
+
+    @media (max-width: 860px) {
+      .hero .wrap, .head, .research, .projects, .skills, .vision, footer .cols { grid-template-columns: 1fr; }
+      .head { gap: .6rem; margin-bottom: 1.8rem; }
+      .portrait { order: -1; width: min(70%, 280px); }
+      .topbar nav { gap: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#accueil">C. O. Miassouekama-Samba</a>
+      <nav aria-label="Navigation principale">
+        <a href="#parcours">Parcours</a>
+        <a href="#recherche">Recherche</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#ambition">Ambition</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <!-- Accueil -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Christ Oberan Miassouekama-Samba</h1>
+          <p class="lead">Économétrie appliquée à l’énergie et à l’environnement.</p>
+          <p class="sub">Étudiant en M2 Économie de l’Énergie à l’IFP School, je travaille sur les conflits socio-environnementaux liés à l’extraction du lithium et sur la place de l’énergie dans le développement, avec un ancrage fort au Congo-Brazzaville.</p>
+          <div class="actions">
+            <a class="btn primary" href="#recherche">Voir mes travaux</a>
+            <a class="btn ghost" href="#contact">Me contacter</a>
+          </div>
         </div>
-        <div class="col-md mb-5">
-          <!-- education -->
-          <h2 class="mb-5">Mon temps</h2>
-          <ul>
-            <li>
-              <h6 class="text-danger">Mon temps à la fac</h6>
-              <p>Nous avons aménagé de l'effort pour apprendre les notions clés pour la réalisation de ce projet.</p>
-            </li>
-            <li>
-              <h6 class="text-danger">la Recherche</h6>
-              <p> La recherche universitaire, nous a permis d'apprehender le domaine de l'énergie ce qui nous a donc permis de mieux rédiger notre mémoire<br>
-                et d'avoir les résultats escomptés, en relation avec notre champ d'étude.
-              </p>
-            </li>
-            <li>
-              <h6 class="text-danger">Mes Objectifs</h6>
-              <p> Passionné par l'économétrie et la data, je souhaite acquérir une maitrise approfondie des outils statistiques des logiciels de data science comme R, Python, SAS, et des techniques d'analyses de données avancées<br>
-                Je voudrais utiliser des compétences en économétrie et en data science pour  analyser des problèmes complexes, trouver des solutions et prendre des décisions éclairées basées sur des données.</p>
-            </li>
-          </ul>
+        <div class="portrait">
+          <img src="Moi.jpg" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/ChristOberan/ChristOberan.github.io/main/Moi.jpg';" alt="Portrait de Christ Oberan Miassouekama-Samba" width="720" height="900">
         </div>
       </div>
-      <div class="row">
-        <div class="col-md mb-5">
-          <!-- skills -->
+    </section>
+
+    <!-- Parcours -->
+    <section class="block" id="parcours">
+      <div class="wrap">
+        <div class="head">
+          <h2>Parcours</h2>
+          <p>De l’économie d’entreprise à l’économie de l’énergie, en passant par l’économétrie appliquée.</p>
         </div>
-        <div class="col-md">
-          <!-- recent work -->
+        <ol class="timeline">
+          <li class="now">
+            <time>2026 – 2027</time>
+            <h3>M2 Économie de l’Énergie — IFP School</h3>
+            <p>Master co-accrédité avec l’Université Paris-Saclay, Paris Nanterre, l’École des Ponts ParisTech et l’INSTN. Cours sur l’hydrogène, la transition énergétique et l’aide à la décision.</p>
+          </li>
+          <li>
+            <time>2025 – 2026</time>
+            <h3>M1 Économie de l’Énergie, de l’Environnement et des Transports — Université Paris-Saclay</h3>
+            <p>Stage de recherche de deux mois à EconomiX (Nanterre), mai–juillet 2026, sous la direction de Patricia Renou-Maissant. Il a donné lieu à mon mémoire sur le triangle du lithium.</p>
+          </li>
+          <li>
+            <time>Brazzaville</time>
+            <h3>Master en économétrie appliquée — Université Marien Ngouabi</h3>
+            <p>Mémoire sur l’effet du capital humain sur la consommation d’électricité en République du Congo.</p>
+          </li>
+          <li>
+            <time>Tours</time>
+            <h3>Licence d’économie d’entreprise — Université de Tours</h3>
+            <p>Bases en microéconomie, statistiques et analyse d’entreprise.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Recherche -->
+    <section class="block" id="recherche">
+      <div class="wrap">
+        <div class="head">
+          <h2>Recherche</h2>
+          <p>Deux travaux d’économétrie appliquée, un sur le lithium en Amérique du Sud, l’autre sur l’électricité au Congo.</p>
+        </div>
+        <div class="research">
+          <article class="panel lead-panel">
+            <h3>Conflits socio-environnementaux et extraction du lithium</h3>
+            <p>Mémoire de M1 sur le triangle du lithium (Argentine, Bolivie, Chili), réalisé à EconomiX sous la direction de Patricia Renou-Maissant et soutenu avec succès.</p>
+            <p>J’ai construit une base de données autour de 20 salars (2014–2023) à partir de la production minière (BGS), des conflits recensés (EJAtlas, OCMAL), des précipitations (ERA5-Land), de la gouvernance (Banque mondiale) et du stress hydrique (WRI Aqueduct, FAO AQUASTAT). L’analyse repose sur des modèles de comptage (Poisson, binomiale négative, ZIP), estimés pays par pays.</p>
+            <div class="finding">
+              <strong>Chili :</strong> une baisse de 10 % des précipitations est associée à environ 32 % de conflits en plus.
+            </div>
+            <p class="meta">Bolivie : données limitées, résultats présentés à titre illustratif.</p>
+          </article>
+
+          <article class="panel">
+            <h3>Capital humain et consommation d’électricité au Congo</h3>
+            <p>Mémoire de master en économétrie appliquée (Université Marien Ngouabi), estimé avec un modèle ARDL sous EViews 9.</p>
+            <p>À court terme, l’éducation a un effet positif sur la consommation d’électricité. À long terme, son effet n’est pas significatif : elle n’explique pas la consommation d’électricité en République du Congo.</p>
+            <p class="meta"><a href="Mon%20M%C3%A9moire%20.pdf" target="_blank" rel="noopener">Lire le mémoire (PDF)</a></p>
+          </article>
         </div>
       </div>
-    </main>
-  </body>
+    </section>
+
+    <!-- Projets -->
+    <section class="block" id="projets">
+      <div class="wrap">
+        <div class="head">
+          <h2>Projets</h2>
+          <p>Dossiers réalisés avec R et R Markdown, rendus au format HTML.</p>
+        </div>
+        <div class="projects">
+          <article class="panel">
+            <h3>Dossier à rendre</h3>
+            <p>Projet de groupe réalisé sous R (R Markdown, rendu HTML).</p>
+            <p class="meta">Avec Jules Assoun et Shnide Joseph W.</p>
+            <a class="go" href="https://christoberan.github.io/dossierrendreeee.html" target="_blank" rel="noopener">Ouvrir le dossier</a>
+          </article>
+          <article class="panel">
+            <h3>Dossier R — second semestre</h3>
+            <p>Second projet réalisé sous R (R Markdown, rendu HTML), version finale.</p>
+            <p class="meta">Avec Jules Assoun.</p>
+            <a class="go" href="https://christoberan.github.io/Dossier-R-christ-jules-2nd-sem-version-finale%20(1).html" target="_blank" rel="noopener">Ouvrir le dossier</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="block" id="competences">
+      <div class="wrap">
+        <div class="head">
+          <h2>Compétences</h2>
+          <p>Une boîte à outils d’économétrie appliquée, du traitement des données à l’interprétation économique.</p>
+        </div>
+        <div class="skills">
+          <div>
+            <h3>Méthodes</h3>
+            <ul>
+              <li>Séries temporelles <span>SARIMA, VAR/VECM, ARDL</span></li>
+              <li>Données de panel</li>
+              <li>Modèles de comptage <span>Poisson, NB2</span></li>
+              <li>Économétrie spatiale <span>SAR</span></li>
+              <li>GMM et modèles à équations structurelles</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Logiciels</h3>
+            <ul>
+              <li>R et R Markdown</li>
+              <li>Python</li>
+              <li>EViews, Stata, Gretl</li>
+              <li>Excel et VBA</li>
+              <li>Pack Office</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Langues</h3>
+            <ul>
+              <li>Français</li>
+              <li>Anglais <span>niveau B2</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambition -->
+    <section class="block" id="ambition">
+      <div class="wrap">
+        <div class="head">
+          <h2>Ambition</h2>
+          <p>Faire de l’économétrie un outil au service du bien-être des populations.</p>
+        </div>
+        <div class="vision">
+          <p class="quote">Mesurer pour comprendre, comprendre pour mieux décider : l’économétrie du bien-être.</p>
+          <div class="panel">
+            <h3>Prochaines étapes</h3>
+            <p>Préparer une thèse CIFRE en économie de l’énergie, en lien avec le monde industriel.</p>
+            <p>Fonder à l’Université Marien Ngouabi de Brazzaville un laboratoire d’économie de l’énergie, le LEEM-Congo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="cols">
+        <p>À la recherche d’un contrat de professionnalisation pour 2026-2027 en analyse économique, transition énergétique, évaluation des politiques publiques ou R&amp;D. Écrivez-moi, je réponds volontiers.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:christ.miassouekama-samba@agroparistech.fr">christ.miassouekama-samba@agroparistech.fr</a></li>
+          <li><a href="mailto:christoberan.miassouekama-samba@etu.univ-tours.fr">christoberan.miassouekama-samba@etu.univ-tours.fr</a></li>
+          <li><a href="https://github.com/ChristOberan" target="_blank" rel="noopener">github.com/ChristOberan</a></li>
+        </ul>
+      </div>
+      <p class="legal">© 2026 Christ Oberan Miassouekama-Samba</p>
+    </div>
+  </footer>
+
+</body>
 </html>
